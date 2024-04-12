@@ -4,7 +4,7 @@
   "main": "dist/terraform.js",
   "types": "dist",
   "scripts": {
-    "build": "webpack",
+    "build": "webpack && tsc --outFile dist/terraform.js",
     "prepare": "npm run build"
   },
   "devDependencies": {

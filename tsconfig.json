@@ -2,6 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "declaration": true,
+    "emitDeclarationOnly": true,
     "declarationMap": true,
     "lib": [
       "DOM",
