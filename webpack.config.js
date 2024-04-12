@@ -1,4 +1,5 @@
 const path = require('path')
+const glob = require('glob')
 const babelConfig = require('./babel.config.json')
 
 const configs = {
@@ -10,9 +11,9 @@ const configs = {
 
 module.exports = {
   mode: 'development',
-  entry: path.resolve(configs.paths.src, 'index.tsx'),
+  entry: glob.sync(`${configs.paths.src}/**/*.tsx`).map(p => `${__dirname}/${p}`),
   output: {
-    filename: 'terraform.js',
+    filename: 'index.js',
     path: configs.paths.output,
     clean: true,
     library: {

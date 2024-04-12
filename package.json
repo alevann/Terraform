@@ -4,7 +4,7 @@
   "main": "dist/terraform.js",
   "types": "dist",
   "scripts": {
-    "build": "webpack && tsc --outFile dist/terraform.js",
+    "build": "webpack && tsc --emitDeclarationOnly",
     "prepare": "npm run build"
   },
   "devDependencies": {
@@ -15,11 +15,11 @@
     "@babel/preset-typescript": "^7.21.4",
     "babel-loader": "^9.1.2",
     "css-loader": "^6.7.3",
+    "glob": "^10.3.12",
     "sass": "^1.62.1",
     "sass-loader": "^13.2.2",
     "style-loader": "^3.3.2",
     "terra": "github:alevann/terra#a885f47",
-    "ts-loader": "^9.4.2",
     "typescript": "^5.0.4",
     "webpack": "^5.81.0",
     "webpack-cli": "^5.0.2"
