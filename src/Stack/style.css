@@ -1,0 +1,19 @@
+.terradom-stack {
+  display: flex;
+}
+
+.terradom-stack-row {
+  flex-direction: row;
+}
+
+.terradom-stack-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.terradom-stack-column {
+  flex-direction: column;
+}
+
+.terradom-stack-column-reverse {
+  flex-direction: column-reverse;
+}
