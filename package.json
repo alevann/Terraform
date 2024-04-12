@@ -4,7 +4,8 @@
   "main": "dist/terraform.js",
   "types": "dist",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "@babel/core": "^7.21.4",
